@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="WaitSnapshot Headers">
+      <UniqueIdentifier>{41ede3db-f847-45a3-a4d5-571a4aabcd51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WaitSnapshot Source">
+      <UniqueIdentifier>{fca9d8df-cff0-4883-9185-c451a93b528b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managed Header Files">
+      <UniqueIdentifier>{b22bf0dc-b477-4232-aef2-a57741ac9e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Managed Source Files">
+      <UniqueIdentifier>{c61804a6-250e-4f80-8ad4-27dd3a7dda8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClrStackWalker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClrSyncBlockManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClrThreadWalker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugEventCallbacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugExtensions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveCLRDataTarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadVirtualCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClrWaitSnapshot.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugStackFrameBuffer.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugStackTrace.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HandleBuffer.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectBuffer.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OwnedBuffer.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UmThreadStack.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UmThreadStackFrame.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UmThreadStackManager.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UmWaitBlock.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UmWaitDeadLock.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UmWaitDeadLockItem.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UmWaitObject.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitBlockBuffer.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitSnapshot.cpp">
+      <Filter>WaitSnapshot Source</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Managed Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClrAddin.cpp">
+      <Filter>Managed Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dac.cpp">
+      <Filter>Managed Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeadLock.cpp">
+      <Filter>Managed Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeadLockItem.cpp">
+      <Filter>Managed Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncBlock.cpp">
+      <Filter>Managed Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncBlockManager.cpp">
+      <Filter>Managed Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadStack.cpp">
+      <Filter>Managed Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadStackFrame.cpp">
+      <Filter>Managed Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadStackFrameArg.cpp">
+      <Filter>Managed Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadStackFrameLocal.cpp">
+      <Filter>Managed Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadStackManager.cpp">
+      <Filter>Managed Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClrStackFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClrStackWalker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClrSyncBlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClrSyncBlockManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClrThreadWalker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DacpStructures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugEventCallbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugExtensions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KernelStructures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LicenseProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LiveCLRDataTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadVirtualCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClrWaitSnapshot.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugStackFrameBuffer.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugStackTrace.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HandleBuffer.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="KStructs.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectBuffer.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OwnedBuffer.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UmThreadStack.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UmThreadStackEnums.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UmThreadStackFrame.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UmThreadStackManager.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UmWaitBlock.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UmWaitDeadLock.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UmWaitDeadLockItem.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UmWaitObject.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitBlockBuffer.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitSnapshot.h">
+      <Filter>WaitSnapshot Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ClrAddin.h">
+      <Filter>Managed Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dac.h">
+      <Filter>Managed Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeadLock.h">
+      <Filter>Managed Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeadLockItem.h">
+      <Filter>Managed Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpiredException.h">
+      <Filter>Managed Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncBlock.h">
+      <Filter>Managed Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncBlockManager.h">
+      <Filter>Managed Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadStack.h">
+      <Filter>Managed Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadStackFrame.h">
+      <Filter>Managed Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadStackFrameArg.h">
+      <Filter>Managed Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadStackFrameLocal.h">
+      <Filter>Managed Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadStackManager.h">
+      <Filter>Managed Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

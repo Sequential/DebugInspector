@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3D7AB959-B0FF-4E59-85ED-8D7DFCA8D506}</ProjectGuid>
+    <RootNamespace>ClrAddin</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30324.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>corguids.lib;dbgeng.lib;detours.lib;detoured.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Windows\v6.0A\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>detoured.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <ImportLibrary>corguids.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>corguids.lib;dbgeng.lib;detours.lib;detoured.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>detoured.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="ClrAddin.cpp" />
+    <ClCompile Include="ClrStackWalker.cpp" />
+    <ClCompile Include="ClrSyncBlockManager.cpp" />
+    <ClCompile Include="ClrThreadWalker.cpp" />
+    <ClCompile Include="ClrWaitSnapshot.cpp" />
+    <ClCompile Include="Dac.cpp" />
+    <ClCompile Include="DeadLock.cpp" />
+    <ClCompile Include="DeadLockItem.cpp" />
+    <ClCompile Include="DebugContext.cpp" />
+    <ClCompile Include="DebugEventCallbacks.cpp" />
+    <ClCompile Include="DebugExtensions.cpp" />
+    <ClCompile Include="DebugStackFrameBuffer.cpp" />
+    <ClCompile Include="DebugStackTrace.cpp" />
+    <ClCompile Include="HandleBuffer.cpp" />
+    <ClCompile Include="Kernel.cpp" />
+    <ClCompile Include="LiveCLRDataTarget.cpp" />
+    <ClCompile Include="ObjectBuffer.cpp" />
+    <ClCompile Include="OwnedBuffer.cpp" />
+    <ClCompile Include="ReadVirtualCache.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SyncBlock.cpp" />
+    <ClCompile Include="SyncBlockManager.cpp" />
+    <ClCompile Include="ThreadStack.cpp" />
+    <ClCompile Include="ThreadStackFrame.cpp" />
+    <ClCompile Include="ThreadStackFrameArg.cpp" />
+    <ClCompile Include="ThreadStackFrameLocal.cpp" />
+    <ClCompile Include="ThreadStackManager.cpp" />
+    <ClCompile Include="UmThreadStack.cpp" />
+    <ClCompile Include="UmThreadStackFrame.cpp" />
+    <ClCompile Include="UmThreadStackManager.cpp" />
+    <ClCompile Include="UmWaitBlock.cpp" />
+    <ClCompile Include="UmWaitDeadLock.cpp" />
+    <ClCompile Include="UmWaitDeadLockItem.cpp" />
+    <ClCompile Include="UmWaitObject.cpp" />
+    <ClCompile Include="Util.cpp" />
+    <ClCompile Include="WaitBlockBuffer.cpp" />
+    <ClCompile Include="WaitSnapshot.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClrAddin.h" />
+    <ClInclude Include="ClrStackFrame.h" />
+    <ClInclude Include="ClrStackWalker.h" />
+    <ClInclude Include="ClrSyncBlock.h" />
+    <ClInclude Include="ClrSyncBlockManager.h" />
+    <ClInclude Include="ClrThreadWalker.h" />
+    <ClInclude Include="ClrWaitSnapshot.h" />
+    <ClInclude Include="Dac.h" />
+    <ClInclude Include="DacpStructures.h" />
+    <ClInclude Include="DeadLock.h" />
+    <ClInclude Include="DeadLockItem.h" />
+    <ClInclude Include="DebugContext.h" />
+    <ClInclude Include="DebugEventCallbacks.h" />
+    <ClInclude Include="DebugExtensions.h" />
+    <ClInclude Include="DebugStackFrameBuffer.h" />
+    <ClInclude Include="DebugStackTrace.h" />
+    <ClInclude Include="ExpiredException.h" />
+    <ClInclude Include="HandleBuffer.h" />
+    <ClInclude Include="Kernel.h" />
+    <ClInclude Include="KernelStructures.h" />
+    <ClInclude Include="KStructs.h" />
+    <ClInclude Include="LicenseProcessor.h" />
+    <ClInclude Include="LiveCLRDataTarget.h" />
+    <ClInclude Include="ObjectBuffer.h" />
+    <ClInclude Include="OwnedBuffer.h" />
+    <ClInclude Include="ReadVirtualCache.h" />
+    <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="SyncBlock.h" />
+    <ClInclude Include="SyncBlockManager.h" />
+    <ClInclude Include="ThreadStack.h" />
+    <ClInclude Include="ThreadStackFrame.h" />
+    <ClInclude Include="ThreadStackFrameArg.h" />
+    <ClInclude Include="ThreadStackFrameLocal.h" />
+    <ClInclude Include="ThreadStackManager.h" />
+    <ClInclude Include="UmThreadStack.h" />
+    <ClInclude Include="UmThreadStackEnums.h" />
+    <ClInclude Include="UmThreadStackFrame.h" />
+    <ClInclude Include="UmThreadStackManager.h" />
+    <ClInclude Include="UmWaitBlock.h" />
+    <ClInclude Include="UmWaitDeadLock.h" />
+    <ClInclude Include="UmWaitDeadLockItem.h" />
+    <ClInclude Include="UmWaitObject.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="WaitBlockBuffer.h" />
+    <ClInclude Include="WaitSnapshot.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
